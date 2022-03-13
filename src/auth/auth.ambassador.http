@@ -1,0 +1,45 @@
+### Register ambassador user
+POST http://localhost:8000/api/ambassador/register
+Content-Type: application/json
+
+{
+  "first_name": "b",
+  "last_name": "b",
+  "email": "b@b.com",
+  "password": "b",
+  "password_confirm": "b"
+}
+
+### Login ambassador user
+POST http://localhost:8000/api/ambassador/login
+Content-Type: application/json
+
+{
+  "email": "b@b.com",
+  "password": "b"
+}
+
+### Get authenticated ambassador user
+GET http://localhost:8000/api/ambassador/user
+
+### Logout ambassador user
+POST http://localhost:8000/api/ambassador/logout
+
+### Update ambassador user info
+PUT http://localhost:8000/api/ambassador/users/info
+Content-Type: application/json
+
+{
+  "first_name": "b",
+  "last_name": "b",
+  "email": "b@b.com"
+}
+
+### Update ambassador user password
+PUT http://localhost:8000/api/ambassador/users/password
+Content-Type: application/json
+
+{
+  "password": "b",
+  "password_confirm": "b"
+}

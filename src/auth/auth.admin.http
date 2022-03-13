@@ -1,0 +1,46 @@
+### Register admin user
+POST http://localhost:8000/api/admin/register
+Content-Type: application/json
+
+{
+  "first_name": "a",
+  "last_name": "a",
+  "email": "a@a.com",
+  "password": "a",
+  "password_confirm": "a"
+}
+
+### Login admin user
+POST http://localhost:8000/api/admin/login
+Content-Type: application/json
+
+{
+  "email": "a@a.com",
+  "password": "a"
+}
+
+### Get authenticated admin user
+GET http://localhost:8000/api/admin/user
+
+### Logout admin user
+POST http://localhost:8000/api/admin/logout
+
+### Update admin user info
+PUT http://localhost:8000/api/admin/users/info
+Content-Type: application/json
+
+{
+  "first_name": "b",
+  "last_name": "b",
+  "email": "b@b.com"
+}
+
+### Update admin user password
+PUT http://localhost:8000/api/admin/users/password
+Content-Type: application/json
+
+{
+  "password": "b",
+  "password_confirm": "b"
+}
+

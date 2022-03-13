@@ -1,0 +1,2 @@
+### GET links for user with id
+GET http://localhost:8000/api/admin/users/6/links

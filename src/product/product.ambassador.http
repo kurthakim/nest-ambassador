@@ -1,0 +1,43 @@
+### GET ALL products
+GET http://localhost:8000/api/ambassador/products
+
+### GET ALL products FRONTEND
+GET http://localhost:8000/api/ambassador/products/frontend
+
+### GET ALL products BACKEND
+GET http://localhost:8000/api/ambassador/products/backend
+?page=2
+
+### GET QUERIED products BACKEND
+GET http://localhost:8000/api/ambassador/products/backend
+?s=sint
+&sort=asc
+
+
+### CREATE product
+POST http://localhost:8000/api/ambassador/products
+Content-Type: application/json
+
+{
+  "title": "title",
+  "description": "desc",
+  "image": "img",
+  "price": 10
+}
+
+### GET products with id
+GET http://localhost:8000/api/ambassador/products/1
+
+### UPDATE product with id
+PUT http://localhost:8000/api/ambassador/products/1
+Content-Type: application/json
+
+{
+  "title": "title 2",
+  "description": "desc 2",
+  "image": "img 2",
+  "price": 20
+}
+
+### DELETE product with id
+DELETE http://localhost:8000/api/ambassador/products/1

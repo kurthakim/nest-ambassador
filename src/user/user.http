@@ -1,0 +1,2 @@
+### Is Ambassador?
+GET http://localhost:8000/api/admin/ambassadors

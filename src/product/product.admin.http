@@ -1,0 +1,30 @@
+### GET ALL products
+GET http://localhost:8000/api/admin/products
+
+### CREATE product
+POST http://localhost:8000/api/admin/products
+Content-Type: application/json
+
+{
+  "title": "title",
+  "description": "desc",
+  "image": "img",
+  "price": 10
+}
+
+### GET products with id
+GET http://localhost:8000/api/admin/products/1
+
+### UPDATE product with id
+PUT http://localhost:8000/api/admin/products/1
+Content-Type: application/json
+
+{
+  "title": "title",
+  "description": "desc ",
+  "image": "img",
+  "price": 20
+}
+
+### DELETE product with id
+DELETE http://localhost:8000/api/admin/products/1
