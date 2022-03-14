@@ -20,7 +20,7 @@ export class Order {
   transaction_id: string;
 
   @Column()
-  user_id: string;
+  user_id: number;
 
   @Column()
   code: string;
@@ -69,6 +69,9 @@ export class Order {
 
   @ManyToOne(() => User, (user) => user.orders, {
     createForeignKeyConstraints: false,
+  })
+  @JoinColumn({
+    name: 'user_id',
   })
   user: User;
 
