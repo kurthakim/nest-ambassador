@@ -1,2 +1,5 @@
 ### Is Ambassador?
 GET http://localhost:8000/api/admin/ambassadors
+
+### Get ambassadors rankings
+GET http://localhost:8000/api/ambassador/rankings

@@ -2,9 +2,12 @@
 GET http://localhost:8000/api/admin/users/6/links
 
 ### CREATE links with product id
-http://localhost:8000/api/ambassador/links
+POST http://localhost:8000/api/ambassador/links
 Content-Type: application/json
 
 {
   "products": [2, 5]
 }
+
+### GET links with code
+http://localhost:8000/api/checkout/links/rl52cwe

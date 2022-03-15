@@ -1,2 +1,35 @@
 ### GET ALL orders
 GET http://localhost:8000/api/admin/orders
+
+### CREATE order
+POST http://localhost:8000/api/checkout/orders
+Content-Type: application/json
+
+{
+  "first_name": "a",
+  "last_name": "a",
+  "email": "a@a.com",
+  "address": "a",
+  "country": "a",
+  "city": "a",
+  "zip": "a",
+  "code": "rl52cwe",
+  "products": [
+    {
+      "product_id": 2,
+      "quantity": 2
+    },
+    {
+      "product_id": 5,
+      "quantity": 3
+    }
+  ]
+}
+
+### confirm order
+POST http://localhost:8000/api/checkout/orders/confirm
+Content-Type: application/json
+
+{
+  "source": "cs_test_b18Ne2Q7qCQjU7IeNf5GLPrvsuu7Y39q42UblTrDOmSNU3wJBI0uH8PQkQ"
+}
