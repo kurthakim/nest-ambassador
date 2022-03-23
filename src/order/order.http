@@ -31,5 +31,5 @@ POST http://localhost:8000/api/checkout/orders/confirm
 Content-Type: application/json
 
 {
-  "source": "cs_test_b18Ne2Q7qCQjU7IeNf5GLPrvsuu7Y39q42UblTrDOmSNU3wJBI0uH8PQkQ"
+  "source": "cs_test_b10KlAo4KwZUcwqyvAyiT9C1Qt2ZAMSqQuxggQiBmD7zsC8UuYKdwRTmuS"
 }

@@ -11,3 +11,9 @@ Content-Type: application/json
 
 ### GET links with code
 http://localhost:8000/api/checkout/links/rl52cwe
+
+### GET the stats of the link??
+GET http://localhost:8000/api/ambassador/stats
+
+### GET ranking of the ambassadors
+GET http://localhost:8000/api/ambassador/rankings
